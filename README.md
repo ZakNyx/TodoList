@@ -21,7 +21,7 @@ This project serves as a simple introduction to ReactJS, a powerful JavaScript l
 ## Usage
 
 1. Clone the repository: `git clone https://github.com/ZakNyx/TodoList`
-2. Navigate to the project directory: `cd react-todo-list`
+2. Navigate to the project directory: `cd TodoList`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
 5. Open your browser and visit: `http://localhost:3000`
