@@ -7,8 +7,8 @@ export const Task = (props) => {
 			transition: "background-color 0.3s ease, box-shadow 0.3s ease"}}	
 		>
 			<h1>{props.taskName}</h1>
-			<button className="complete" onClick={() => props.completeTask(props.id)}>{props.completed ? "Undo" : "Complete"}</button>
-			<button className="delete" onClick={()  => props.deleteTask(props.id)} >Delete</button>
+			<button className="button complete" onClick={() => props.completeTask(props.id)}>{props.completed ? "Undo" : "Complete"}</button>
+			<button className="button delete" onClick={()  => props.deleteTask(props.id)} >Delete</button>
 		</div>
 	);
 };

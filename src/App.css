@@ -18,17 +18,14 @@ button {
   transition: background-color 0.3s ease;
 }
 
-.buttons:hover {
-  background-color: #0056b3
+.button:hover {
+  opacity: 0.9;
 }
 
-.delete:hover {
+.button.delete:hover {
   background-color: #DC3545;
 }
-.complete:hover {
-  background-color: #3e8e41;
-}
 
-button:active {
+.button:hover.complete {
   background-color: #3e8e41;
 }

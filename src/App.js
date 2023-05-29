@@ -50,8 +50,10 @@ function App() {
 				<input
 					placeholder='Cleaning' 
 					onChange={handleChange}
-					onKeyDown={handleKeyDown}/>
-				<button className='buttons' onClick={addTask}>Add Task</button>
+					onKeyDown={handleKeyDown}
+					value={newTask}
+					required/>
+				<button className='button' onClick={addTask}>Add Task</button>
 			</div>
 			<div className='list'>
 				{todoList.map((task) =>{
