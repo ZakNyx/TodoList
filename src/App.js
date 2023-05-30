@@ -47,12 +47,15 @@ function App() {
 	return (
 		<div className="App">
 			<div className='addTask'>
-				<input
-					placeholder='Cleaning' 
-					onChange={handleChange}
-					onKeyDown={handleKeyDown}
-					value={newTask}
-					required/>
+				<div className='wrapper'>
+					<input
+						onChange={handleChange}
+						onKeyDown={handleKeyDown}
+						value={newTask}
+						required
+					/>
+					<label>Task Name: </label>
+				</div>
 				<button className='button' onClick={addTask}>Add Task</button>
 			</div>
 			<div className='list'>
