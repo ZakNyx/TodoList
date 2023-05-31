@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Task} from './Task'
+import { Task } from './Task'
 import './App.css';
 
 function App() {
@@ -13,13 +13,12 @@ function App() {
 	const handleKeyDown = (e) => {
 		if (e.key === "Enter")
 			addTask();
-	} 
+	}
 
 	const addTask = () => {
-		if (newTask === '')
-		{
-			alert ("This field cannot be empty!");
-			return ;
+		if (newTask === '') {
+			alert("This field cannot be empty!");
+			return;
 		}
 		const task = {
 			id: todoList.length === 0 ? 1 : todoList[todoList.length - 1].id + 1,
@@ -37,10 +36,10 @@ function App() {
 		setToDoList(
 			todoList.map((task) => {
 				if (task.id === id)
-					return {...task, completed: !task.completed};
+					return { ...task, completed: !task.completed };
 				else
 					return task;
-				})
+			})
 		)
 	}
 
@@ -59,13 +58,13 @@ function App() {
 				<button className='button' onClick={addTask}>Add Task</button>
 			</div>
 			<div className='list'>
-				{todoList.map((task) =>{
+				{todoList.map((task) => {
 					return (<Task
-							taskName={task.taskName}
-							id={task.id}
-							deleteTask={deleteTask}
-							completeTask={completeTask}
-							completed={task.completed}/>);
+						taskName={task.taskName}
+						id={task.id}
+						deleteTask={deleteTask}
+						completeTask={completeTask}
+						completed={task.completed} />);
 				})}
 			</div>
 		</div>
